@@ -1,5 +1,5 @@
 import unittest
-from pott.utils.html_utils import extract_papers_from
+from gsp.utils.html_utils import extract_papers_from
 from pyquery import PyQuery
 
 

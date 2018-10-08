@@ -1,5 +1,5 @@
 import re
-from pott.paper import Paper
+from gsp.paper import Paper
 from pyquery import PyQuery
 
 

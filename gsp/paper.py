@@ -1,5 +1,5 @@
-from pott.files.pdf import Pdf
-from pott.files.text import Text
+from gsp.files.pdf import Pdf
+from gsp.files.text import Text
 
 
 class Paper:
