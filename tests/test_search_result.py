@@ -1,10 +1,10 @@
 import unittest
-from gsp.utils.html_utils import extract_papers_from
+from gsutil.search_result import SearchResult
 from pyquery import PyQuery
 
 
-class TestHtmlUtils(unittest.TestCase):
-    def test_extract_papers_from(self):
+class TestSearchResult(unittest.TestCase):
+    def test_extract_papers(self):
         html = """
         <html>
           <div class="gs_r gs_or gs_scl">
@@ -22,7 +22,8 @@ class TestHtmlUtils(unittest.TestCase):
         """
 
         pq_html = PyQuery(html)
-        papers = extract_papers_from(pq_html)
+        search_result = SearchResult(pq_html)
+        papers = search_result.extract_papers()
         self.assertEqual(papers[0].url, 'https://smith2018.pdf')
         self.assertEqual(papers[0].title, 'Awesome Study in 2018')
         self.assertEqual(papers[0].authors, ['John Smith'])

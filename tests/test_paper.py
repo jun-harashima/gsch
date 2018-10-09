@@ -1,5 +1,5 @@
 import unittest
-from gsp.paper import Paper
+from gsutil.paper import Paper
 
 
 class TestPaper(unittest.TestCase):
