@@ -4,13 +4,13 @@ from pdfminer.converter import TextConverter
 from pdfminer.layout import LAParams
 from pdfminer.pdfpage import PDFPage
 from io import StringIO
-from gsp.files.file import File
-from gsp.utils.log import logger
+from gsutil.file import File
+from gsutil.log import logger
 
 
 class Pdf(File):
 
-    DIR_NAME = os.environ['HOME'] + '/.gsp/pdf'
+    DIR_NAME = os.environ['HOME'] + '/.gsutil/pdf'
 
     def __init__(self, file_name):
         self.set_file_name_and_path(file_name)

@@ -1,16 +1,16 @@
-===
-GSP
-===
+======
+gsutil
+======
 
 
-.. image:: https://img.shields.io/pypi/v/gsp.svg
-        :target: https://pypi.python.org/pypi/gsp
+.. image:: https://img.shields.io/pypi/v/gsutil.svg
+        :target: https://pypi.python.org/pypi/gsutil
 
-.. image:: https://img.shields.io/travis/jun-harashima/gsp.svg
-        :target: https://travis-ci.org/jun-harashima/gsp
+.. image:: https://img.shields.io/travis/jun-harashima/gsutil.svg
+        :target: https://travis-ci.org/jun-harashima/gsutil
 
-.. image:: https://readthedocs.org/projects/gsp/badge/?version=latest
-        :target: https://gsp.readthedocs.io/en/latest/?badge=latest
+.. image:: https://readthedocs.org/projects/gsutil/badge/?version=latest
+        :target: https://gsutil.readthedocs.io/en/latest/?badge=latest
         :alt: Documentation Status
 
 
@@ -20,7 +20,7 @@ Python Boilerplate contains all the boilerplate you need to create a Python pack
 
 
 * Free software: MIT license
-* Documentation: https://gsp.readthedocs.io.
+* Documentation: https://gsutil.readthedocs.io.
 
 
 Features

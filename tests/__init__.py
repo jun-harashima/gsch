@@ -1,3 +1,3 @@
 # -*- coding: utf-8 -*-
 
-"""Unit test package for gsp."""
+"""Unit test package for gsutil."""

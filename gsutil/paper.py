@@ -1,5 +1,5 @@
-from gsp.files.pdf import Pdf
-from gsp.files.text import Text
+from gsutil.pdf import Pdf
+from gsutil.text import Text
 
 
 class Paper:
