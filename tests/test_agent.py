@@ -1,10 +1,11 @@
 import unittest
-from gsutil.search_result import SearchResult
 from pyquery import PyQuery
+from gsch.agent import Agent
 
 
-class TestSearchResult(unittest.TestCase):
-    def test_extract_papers(self):
+class TestHelper(unittest.TestCase):
+
+    def test__extract_papers_from(self):
         html = """
         <html>
           <div class="gs_r gs_or gs_scl">
@@ -21,9 +22,9 @@ class TestSearchResult(unittest.TestCase):
         </html>
         """
 
+        agent = Agent()
         pq_html = PyQuery(html)
-        search_result = SearchResult(pq_html)
-        papers = search_result.extract_papers()
+        papers = agent._extract_papers_from(pq_html)
         self.assertEqual(papers[0].url, 'https://smith2018.pdf')
         self.assertEqual(papers[0].title, 'Awesome Study in 2018')
         self.assertEqual(papers[0].authors, ['John Smith'])
