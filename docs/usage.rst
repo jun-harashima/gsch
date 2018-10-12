@@ -4,4 +4,4 @@ Usage
 
 To use GSP in a project::
 
-    import gsutil
+    import gsch

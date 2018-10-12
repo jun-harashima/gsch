@@ -1,5 +1,5 @@
 import unittest
-from gsutil.paper import Paper
+from gsch.paper import Paper
 
 
 class TestPaper(unittest.TestCase):
@@ -12,7 +12,6 @@ class TestPaper(unittest.TestCase):
         self.assertEqual(paper.year, '2017')
         self.assertEqual(paper.cited_by, 10)
         self.assertEqual(paper.url, 'https://smith2017.pdf')
-        self.assertEqual(paper.id, 'Smith2017')
 
 
 if __name__ == "__main__":

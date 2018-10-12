@@ -1,20 +1,25 @@
 import re
-from gsutil.paper import Paper
+from gsch.paper import Paper
 from pyquery import PyQuery
 
 
-class SearchResult():
+class Agent():
 
     REGEXP_FOR_AUTHORS = re.compile(r'<a.+?>|</a>|<b>|</b>')
     REGEXP_FOR_YEAR = re.compile(r'([0-9]{4}$)')
     REGEXP_FOR_CITED_BY = re.compile(r'Cited by ([0-9]+)')
 
-    def __init__(self, pq_html):
-        self.html = pq_html
+    def __init__(self):
+        pass
 
-    def extract_papers(self):
+    def search(self, url):
+        pq_html = PyQuery(url)
+        papers = self._extract_papers_from(pq_html)
+        return papers
+
+    def _extract_papers_from(self, pq_html):
         papers = []
-        for div in self.html.find('div.gs_r.gs_or.gs_scl'):
+        for div in pq_html.find('div.gs_r.gs_or.gs_scl'):
             pq_div = PyQuery(div)
             paper = self._extract_paper_from(pq_div)
             papers.append(paper)
