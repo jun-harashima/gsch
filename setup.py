@@ -33,7 +33,7 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
     ],
-    description="Python Boilerplate contains all the boilerplate you need to create a Python package.",
+    description="gsch is a tool for handling paper information in a Google Scholar results page.",
     install_requires=requirements,
     license="MIT license",
     long_description=readme + '\n\n' + history,

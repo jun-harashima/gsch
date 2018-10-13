@@ -9,18 +9,13 @@ gsch
 .. image:: https://img.shields.io/travis/jun-harashima/gsch.svg
         :target: https://travis-ci.org/jun-harashima/gsch
 
-.. image:: https://readthedocs.org/projects/gsch/badge/?version=latest
-        :target: https://gsch.readthedocs.io/en/latest/?badge=latest
-        :alt: Documentation Status
 
 
 
-
-Python Boilerplate contains all the boilerplate you need to create a Python package.
+gsch is a tool for handling paper information in a Google Scholar results page.
 
 
 * Free software: MIT license
-* Documentation: https://gsch.readthedocs.io.
 
 
 Features
