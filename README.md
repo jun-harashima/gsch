@@ -1,8 +1,6 @@
 # gsch
 
-[![](https://img.shields.io/pypi/v/gsch.svg)](https://pypi.python.org/pypi/gsch)
-
-[![](https://img.shields.io/travis/jun-harashima/gsch.svg)](https://travis-ci.org/jun-harashima/gsch)
+[![](https://img.shields.io/pypi/v/gsch.svg)](https://pypi.python.org/pypi/gsch) [![](https://img.shields.io/travis/jun-harashima/gsch.svg)](https://travis-ci.org/jun-harashima/gsch)
 
 gsch is a tool for handling paper information in a Google Scholar results page.
 
