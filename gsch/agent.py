@@ -5,6 +5,8 @@ from pyquery import PyQuery
 
 class Agent():
 
+    SCHOLAR_URL = 'https://scholar.google.com/scholar'
+
     REGEXP_FOR_AUTHORS = re.compile(r'<a.+?>|</a>|<b>|</b>')
     REGEXP_FOR_YEAR = re.compile(r'([0-9]{4}$)')
     REGEXP_FOR_CITED_BY = re.compile(r'Cited by ([0-9]+)')
@@ -12,10 +14,15 @@ class Agent():
     def __init__(self):
         pass
 
-    def search(self, url):
+    def search(self, keywords):
+        url = self._set_url_for(keywords)
         pq_html = PyQuery(url)
         papers = self._extract_papers_from(pq_html)
         return papers
+
+    def _set_url_for(self, keywords):
+        url = self.SCHOLAR_URL + '?q=' + '+'.join(keywords)
+        return url
 
     def _extract_papers_from(self, pq_html):
         papers = []

@@ -5,6 +5,12 @@ from gsch.agent import Agent
 
 class TestHelper(unittest.TestCase):
 
+    def test__set_url_for(self):
+        keywords = ['aaa', 'bbb']
+        agent = Agent()
+        url = agent._set_url_for(keywords)
+        self.assertEqual(url, 'https://scholar.google.com/scholar?q=aaa+bbb')
+
     def test__extract_papers_from(self):
         html = """
         <html>
