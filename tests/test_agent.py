@@ -3,7 +3,7 @@ from pyquery import PyQuery
 from gsch.agent import Agent
 
 
-class TestHelper(unittest.TestCase):
+class TestAgent(unittest.TestCase):
 
     def test__set_url_for(self):
         keywords = ['aaa', 'bbb']
