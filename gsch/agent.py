@@ -1,5 +1,6 @@
 import re
 from gsch.paper import Paper
+from gsch.option import Option
 from pyquery import PyQuery
 
 
@@ -14,14 +15,20 @@ class Agent():
     def __init__(self):
         pass
 
-    def search(self, keywords):
-        url = self._set_url_for(keywords)
+    def search(self, keywords, option=Option()):
+        url = self._set_url_for(keywords, option)
         pq_html = PyQuery(url)
         papers = self._extract_papers_from(pq_html)
         return papers
 
-    def _set_url_for(self, keywords):
+    def _set_url_for(self, keywords, option):
         url = self.SCHOLAR_URL + '?q=' + '+'.join(keywords)
+        if option.start != 0:
+            url += '&start=' + str(option.start)
+        if option.year_low is not None:
+            url += '&as_ylo=' + option.year_low
+        if option.year_high is not None:
+            url += '&as_yhi=' + option.year_high
         return url
 
     def _extract_papers_from(self, pq_html):
