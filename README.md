@@ -12,7 +12,7 @@ To install gsch, run this command in your terminal:
 $ pip install gsch
 ```
 
-You can handle paper information in a Google Scholar results page like this:
+Using gsch, you can handle paper information in a Google Scholar results page as follows:
 
 ```
 from gsch.agent import Agent
@@ -45,4 +45,4 @@ In this case, `papers` consists of papers that have been published since 2017. L
 
 - `year_low`: if you set `year_low=2017`, you obtain papers that have been published since 2017
 - `year_high`: if you set `year_high=2017`, you obtain papers that have been published by 2017
-- `start`: if you set `start=10`, you obtain papers that are ranked from 11-20
+- `start`: if you set `start=10`, you obtain papers that are ranked from 11 to 20
