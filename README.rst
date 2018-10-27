@@ -2,10 +2,10 @@
 gsch
 ====
 
-.. |travis| image:: https://img.shields.io/pypi/v/gsch.svg
+.. image:: https://img.shields.io/pypi/v/gsch.svg
     :target: https://pypi.python.org/pypi/gsch
 
-.. |travis| image:: https://img.shields.io/travis/jun-harashima/gsch.svg
+.. image:: https://img.shields.io/travis/jun-harashima/gsch.svg
     :target: https://travis-ci.org/jun-harashima/gsch
 
 gsch is a tool for handling paper information in a Google Scholar results page.
