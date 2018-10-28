@@ -8,11 +8,8 @@ from setuptools import setup, find_packages
 with open('README.rst') as readme_file:
     readme = readme_file.read()
 
-requirements = [ ]
-
-setup_requirements = [ ]
-
-test_requirements = [ ]
+with open('requirements_dev.txt') as requirements_file:
+    requirements = requirements_file.read().splitlines()
 
 setup(
     author="Jun Harashima",
@@ -38,10 +35,8 @@ setup(
     keywords='gsch',
     name='gsch',
     packages=find_packages(include=['gsch']),
-    setup_requires=setup_requirements,
     test_suite='tests',
-    tests_require=test_requirements,
     url='https://github.com/jun-harashima/gsch',
-    version='0.2.1',
+    version='0.2.2',
     zip_safe=False,
 )
