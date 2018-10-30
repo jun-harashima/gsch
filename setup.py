@@ -37,6 +37,6 @@ setup(
     packages=find_packages(include=['gsch']),
     test_suite='tests',
     url='https://github.com/jun-harashima/gsch',
-    version='0.2.2',
+    version='0.2.3',
     zip_safe=False,
 )
