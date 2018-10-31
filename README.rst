@@ -44,6 +44,8 @@ You will often obtain better results as follows:
 
 .. code-block:: python
 
+   from gsch.option import Option
+
    agent = Agent()
    option = Option(year_low=2017)
    papers = agent.search(['some', 'topic'], option)
